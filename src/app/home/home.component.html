@@ -1,0 +1,86 @@
+
+<mat-toolbar color="primary">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <span>Cliente</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>search</mat-icon>
+      <span>buscar</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>shopping Cart checkout</mat-icon>
+      <span>ver carrito</span>
+    </button>
+
+    <button mat-menu-item>
+      <span>Adninistrador</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>add</mat-icon>
+      <span>agregar producto</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>edit</mat-icon>
+      <span>ver lista de productos</span>
+    </button>
+
+<br/>
+<button mat-menu-item>
+  <mat-icon>logoutt</mat-icon>
+  <span>cerrar sesion</span>
+</button>
+  </mat-menu>
+
+  <span>Tienda</span>
+  <span class="example-spacer"></span>
+
+  <button mat-icon-button matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+<mat-icon>shopping cart</mat-icon>
+</button>
+
+  <button mat-icon-button class="app-login"  aria-label="Example icon-button with share icon">
+    <mat-icon>login</mat-icon>
+  </button>
+ 
+  
+</mat-toolbar>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+<mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>nintendo switch</mat-card-title>
+      <mat-card-subtitle>Medium</mat-card-subtitle>
+      <img mat-card-md-image src="https://imagenes.elpais.com/resizer/9kfx0xCikNE8cRGQDZz_SRlOZyk=/1960x1103/cloudfront-eu-central-1.images.arcpublishing.com/prisa/G3R5NYBJYBFH5LSW7GZX4RYFWA.JPG" >
+    </mat-card-title-group>
+    <mat-card-content>
+      {{longText}}
+    </mat-card-content>
+  </mat-card>
+  <br/>
+  <mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>psp vita</mat-card-title>
+      <mat-card-subtitle>Medium</mat-card-subtitle>
+      <img mat-card-md-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/PlayStation_Vita_illustration.svg/800px-PlayStation_Vita_illustration.svg.png" >
+    </mat-card-title-group>
+    <mat-card-content>
+      {{longText}}
+    </mat-card-content>
+  </mat-card>
+  <br/>
+  <mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>nintendo ds</mat-card-title>
+      <mat-card-subtitle>Medium</mat-card-subtitle>
+      <img mat-card-md-image src="https://fs-prod-cdn.nintendo-europe.com/media/images/03_teaser_module_1_square/systems_2/nintendo_ds_3/TM_DS_Lite_TouchScreen.png" >
+    </mat-card-title-group>
+    <mat-card-content>
+      {{longText}}
+    </mat-card-content>
+  </mat-card>
